@@ -1,0 +1,64 @@
+/* Implementing Fonts */
+
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/roboto-v30-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v30-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v30-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-v30-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+
+/* Universal Selector */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Element / Type Selector */
+
+body {
+  padding: 20px;
+  margin: 0;
+  font-family: Roboto;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  background-color: rgb(216, 229, 235);
+}
+
+h2 {
+  margin: 0;
+  color: rgb(252, 95, 38);
+}
+
+/* Class Selector */
+
+.highlight-section {
+  border: 3px solid rgb(252, 95, 38);
+  background-color: #333;
+  color: #ddd;
+}
+
+.highlight-text {
+  border-radius: 4px;
+  padding: 2px 5px;
+  background-color: lightblue;
+}
+
+.block {
+  display: block;
+  color: orange;
+}
